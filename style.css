@@ -1,0 +1,408 @@
+
+/* CSS Boiler Plate Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'General Sans', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+/* CSS Boiler Plate End */
+
+/* Circle CSS */
+#point-circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    z-index: 99999;
+    background-color: #fff;
+    position: absolute;
+    /* transition for smooth movement of circle as mouse moves */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+/* Container of Website */
+#container{
+    width: 100%;   
+}
+/* first page */
+/* Hero CSS Start */
+#hero{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Navigation CSS Start */
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#nav a{
+ text-decoration: none;
+ font-size: 17.5px;
+ color: white; 
+ font-weight: 500;  
+}
+#menu-btn{
+    z-index: 1;
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    margin-top: 0;
+    opacity: 1;
+}
+ #menu{
+    opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    overflow: hidden;
+    margin-left:0 ;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    margin-top: 0;
+}
+ #menu ul{
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   width: 80%;
+   margin: 18px;
+}
+#menu ul li{
+    margin: 0 10px;
+    width: 100px;
+    text-align: center;
+}
+ #menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+/* Navigation CSS End */
+
+/* CSS to Add Animation Start */
+.animate{
+    width: fit-content;
+    overflow: hidden;
+}
+.animate .move-element{
+    transform: translateY(100%);
+    
+}
+/* CSS to Add Animation End */
+
+/* Headings CSS Start */
+#heading{
+    margin-top: 90px;
+}
+
+#heading h1{
+  margin-left: 30px;
+  opacity: .7;
+  line-height: 1;
+  font-size: 10.5vw;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#heading #second-h1{
+    margin-left: 178px;
+}
+
+.blocktext{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.blocktext h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: right;
+}
+/* Headings CSS End */
+
+/* Small Headings CSS Start */
+#smallheadings{
+    margin-top: 128px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#smallheadings h5{
+    text-transform: uppercase;
+    margin-top: 1vw;
+    font-size: 1vw;
+    text-align: right;
+}
+/* Small Headings CSS End */
+
+/* Hero Footer CSS Start */
+#herofooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1vw 2vw;
+}
+
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+
+#herofooter a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#herofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #888;
+}
+/* Hero Footer CSS End */
+
+/* Hero CSS End */
+
+
+/* secont page */
+/* Second CSS Start */
+#second{
+    width: 100%;
+    height: 100vh;
+    padding-top: 198px;
+    padding-right: 11vw;
+    padding-left: 2vw;
+    margin-bottom: 250px;
+
+}
+
+.elements{
+    width: 100%;
+    border-top: 1px solid #888;
+    padding: 3vw 3vw;
+    color: #fff;
+    opacity: .7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+
+}
+
+.elements h1{
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+.last-ele{
+    border-bottom: 1px solid #888;
+}
+
+.elements img{
+    position: absolute;
+    z-index: 9999;
+    height: 140%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+
+}
+/* Second CSS End */
+
+
+/* About CSS start */
+#about{
+    color: #fff;
+    width: 100%;
+    padding: 10vw 5vw;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-left: 30vw;
+}
+#about img{
+   width: 240px;
+}
+
+#text-about{
+    width: 25rem;
+    /* background-color: red; */
+}
+
+#text-about h5{
+    text-transform: uppercase;
+    opacity: .7;
+    margin-bottom: 4px;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+#text-about p{
+    line-height: 26px;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 1;
+    margin-bottom: 18px;
+}
+
+#text-about button{
+    padding: 6px 18px;
+    border: 1px solid white;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+#text-about button:hover{
+    background-color: white;
+    color: black;
+}
+/* About CSS End */
+
+
+/* Subscribe CSS Start */
+#subscribe{
+    padding: 20px 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#subscribe h5{
+    font-weight: 500;
+    font-size: .875rem;
+    opacity: .7;
+
+}
+#subscribe h3{
+    font-weight:500;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+#subscribe h3 a{
+    color: #fff;
+    text-decoration: none;
+}
+/* Subscribe CSS End */
+
+
+/* Footer CSS Start */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+    color: #fff;
+    text-transform: uppercase;
+    /* margin-bottom: 10px; */
+}
+
+#footer-left{
+    display: flex;
+    gap: 35px;
+    margin-top: 5px;
+}
+#footer-left h5{
+    font-size: 1rem;
+    font-weight: 500;
+   
+}
+
+
+#footer-right{
+    display: flex;
+    gap: 35px;   
+}
+
+#footer-right a{
+   text-decoration: none;
+   color: #fff;
+   font-size: .875rem;
+   font-weight: 500;
+   margin-top: 5px;
+}
+/* Footer CSS End */
+
+
+/* ____________________________________________________________________________________________________________ */
+
+
+
+/* Media Query CSS */
+@media(max-width:850px) {
+    #container {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+      }
+    #footer,#about,#herofooter{
+        flex-direction: column;
+    }
+    #about{
+    /* padding: 100px 10px 0px; */
+    margin: 40px 0px;
+    display: flex;
+    padding-left: 15px;
+    gap: 30px;
+    }
+    #text-about {
+        width: 23rem;
+    }
+    /* #text-about p,#text-about h5{
+        padding: 20px;
+    }
+    #text-about button{
+       padding-left: 20px;
+    } */
+    #second{
+        padding-top: 80px;;
+        margin-bottom: -140px;
+        height: 76vh;
+    }
+    #hero{
+        display: inline;
+    }
+    #footer{
+        margin-top: 25px;
+    }
+    #footer-right {
+        gap: 20px;
+    }
+    #menu ul{
+        flex-direction: column;
+    }
+    #smallheadings h5 {
+
+        font-size: 1.9vw;
+}
+   #herofooter a ,#herofoot div{
+    padding: 4px;
+   }
+}

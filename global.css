@@ -1,0 +1,29 @@
+/* targatiing the all the a tags on webpage to give a underline effect upon hover */
+
+
+a{
+    position: relative;
+    transition: color 0.3s;
+}
+
+a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+
+a:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a i{
+    background-color:black;
+}
